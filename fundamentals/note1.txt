@@ -1,0 +1,6 @@
+javascript note 
+ - object oriented ( based on objects,for storing most kinds of data) 
+ - multiparadigm (we can use different styles of programming) 
+ - high level - ( we dont have to worry about complex stuff like memory management) 
+ - dynamic effects and web applications in the browser 
+ - javascript, react, angular, node.js, 
