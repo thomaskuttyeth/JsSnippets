@@ -22,8 +22,3 @@ data science intern
 apar technologies 
 25
 `)
-
-
-
-
-
