@@ -13,16 +13,30 @@ const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
 
-// setting the initial scores as zero
-scoreElem0.textContent = 0;
-scoreElem1.textContent = 0;
+let currentScore, activePlayer, playing, scores;
 
-const scores = [0, 0];
-// current score
-let currentScore = 0;
-let activePlayer = 0;
-let playing = true;
+// starting conditions ;
+const init = function () {
+  playerElem0.classList.remove("player--winner");
+  playerElem1.classList.remove("player--winner");
+  // setting the initial scores as zero
+  scoreElem0.textContent = 0;
+  scoreElem1.textContent = 0;
+  currentElem0.textContent = 0;
+  currentElem1.textContent = 0;
+  playerElem0.classList.add("player--active");
+  playerElem1.classList.remove("player--active");
+  scores = [0, 0];
+  // current score
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
 
+  // we need to hide the die value(images)
+  diceElem.classList.add("hidden");
+};
+
+init();
 const switchPlayer = function () {
   // switch to the next player ;
   document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -32,9 +46,6 @@ const switchPlayer = function () {
   playerElem0.classList.toggle("player--active");
   playerElem1.classList.toggle("player--active");
 };
-
-// we need to hide the die value(images)
-diceElem.classList.add("hidden");
 
 // rolling dice functionality
 btnRoll.addEventListener("click", function () {
@@ -80,4 +91,7 @@ btnHold.addEventListener("click", function () {
       switchPlayer();
     }
   }
+});
+btnNew.addEventListener("click", function () {
+  init();
 });
