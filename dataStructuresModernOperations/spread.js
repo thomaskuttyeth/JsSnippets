@@ -58,6 +58,3 @@ const ingredients = [
 console.log(ingredients);
 restaurant.orderPasta(...ingredients); 
 */
-
-// expanding element from the existing object; 
-const newRestaurant = { ...restaurant, founder: "Thomask" };
