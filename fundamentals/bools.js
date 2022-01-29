@@ -7,7 +7,7 @@ console.log(Boolean(NaN));  // nan is always false
 console.log(Boolean(null));  // null is always flase 
 
 // there are five flasy values in javascript
-// all others are truthu values 
+// all others are truthy values 
 
 // type coersion 
 const money = 0 ; 
