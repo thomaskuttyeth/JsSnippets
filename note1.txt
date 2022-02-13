@@ -25,3 +25,36 @@ js is a highlevel, prototype-based object-oriented, multi-paradigm, interpreted 
 // call stack and heap 
 // web apis (DOM, Timers, Fetch api ...) 
 // 
+
+
+
+
+syllabus 
+-------------------------------------------------
+fundamentals
+-boolean logic 
+-falsy values 
+-branching
+-arrays
+-array methods 
+-for loops 
+-while loops
+- ternery operators 
+- function declaration/ expression/ arrow function
+- variable types and assignment
+-switches
+- equality and inequality operators 
+- alert functionality
+- object and object methods
+- sets
+- rest patterns 
+- object loops
+- spread operator 
+- string methods
+- object destructuring
+- maps 
+- array destructuring
+- bind method
+- closures
+- firstclass functions 
+- function parameters 
